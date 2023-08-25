@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>La liste des étudiants</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <img id="head" src="entete.png" alt="" />
+    <section class="inputs">
+      <input
+        id="enter"
+        type="text"
+        name=""
+        value=""
+        placeholder="Entrez le nom de l'étudiant" />
+      <button id="present" type="button" name="button">Present</button>
+      <button id="absent" type="button" name="button">absent</button>
+      <button id="tout" type="button" name="button">Tout voir</button>
+    </section>
+    <section class="list">
+      <section class="here">
+        <h2>Present</h2>
+        <ol class="hidden" id="present-list"></ol>
+      </section>
+      <section class="late">
+        <h2>absent</h2>
+        <ol class="hidden" id="absent-list"></ol>
+      </section>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
